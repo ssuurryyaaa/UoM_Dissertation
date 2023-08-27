@@ -1,0 +1,10 @@
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+pycountry_convert
+dill
+scikit-fuzzy
+ipynb
+-e .
