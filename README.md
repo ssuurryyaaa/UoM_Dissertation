@@ -1,4 +1,23 @@
-# INTERACTION PATTERNS TO PREDICT THE USABILITY OF INTERACTIVE DASHBOARDS
+![license](https://img.shields.io/badge/License-MIT-green.svg)![python](https://img.shields.io/badge/python-3.10-blue)
+
+# University Of Manchester MSc Data Science (CSDI Pathway) Dissertation Project
+# Title - INTERACTION PATTERNS TO PREDICT THE USABILITY OF INTERACTIVE DASHBOARDS
+
+## Installation
+1. Upgrade python pip package manager. 
+```bash
+python3 -m pip install --user --upgrade pip
+python3 -m pip --version
+```
+2. Create python virtual environment and activate install.
+```bash
+python3 -m venv uom_venv
+.\uom_venv\Scripts\activate
+```
+3. Install required packages.
+```bash
+pip install -r requirements.txt
+```
 
 ## OBJECTIVE
 The goal of this research was to extract the most common user interaction patterns on interactive dashboards and determine if they could be used to predict the usability of these dashboards. 
@@ -17,13 +36,24 @@ The first pipeline involved:
 2. Finding unique representations of user interactions
 3. Encoding these representations into numeric values to feed as input into the SPMF pattern mining tool
 
-Pattern were retrieved the tool using VMSP algorithm.
+Patterns were retrieved by the tool using the VMSP algorithm.
 Thematic analysis was done to understand the meaning of the interaction events.
 
 The second pipeline involved:
 1. The mapping of the extracted pattern with other usability factors
 2. Analysing the correlation between the pattern frequencies and these usability metrics
 3. Regression analysis to predict the usability of dashboards
+
+## RESULTS
+| Min Support (%) | Max Gap | Total Number of Patterns | Max Pattern Length (mxL) | Max Support Value at Max Length (mxS) | Net Score (mxL * mxS) | Number of Patterns Over Benchmark Score |
+|-----------------|---------|--------------------------|---------------------------|----------------------------------------|-----------------------|--------------------------------------|
+| 100             | 0       | 43                       | 7                         | 16                                     | 112                   | 0                                    |
+| 90              | 0       | 79                       | 9                         | 15                                     | 135                   | 2                                    |
+| 80              | 0       | 287                      | 10                        | 15                                     | 150                   | 2                                    |
+| 70              | 0       | 584                      | 12                        | 12                                     | 144                   | 2                                    |
+| 60              | 0       | 1596                     | 12                        | 12                                     | 144                   | 2                                    |
+| 50              | 0       | 2677                     | 14                        | 8                                      | 112                   | 0                                    |
+
 
 ## EVALUATION
 1. The patterns mined from SPMF were benchmarked to identify the most suitable ones for further research by analysis the length of patterns and their support value.
