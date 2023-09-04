@@ -32,7 +32,7 @@ The goal was achieved using two pipelines.
 ![Outline of the process of KDD from interaction patterns to determine usability](https://github.com/ssuurryyaaa/UoM_Dissertation/blob/main/images/METHOD.png)
 
 The first pipeline involved:
-1. Merging and pre-processing the user interaction logs
+1. Merging and pre-processing the raw user interaction logs
 2. Finding unique representations of user interactions
 3. Encoding these representations into numeric values to feed as input into the SPMF pattern mining tool
 
