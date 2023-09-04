@@ -1,10 +1,7 @@
-pandas
-numpy
-seaborn
-matplotlib
-scikit-learn
-pycountry_convert
-dill
-scikit-fuzzy
-ipynb
--e .
+pandas==1.3.3
+numpy==1.21.2
+seaborn==0.11.2
+matplotlib==3.4.3
+scipy==1.7.3
+scikit-learn==0.24.2
+warnings==0.10.3
